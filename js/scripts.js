@@ -8,16 +8,16 @@ $(document).ready(function(){
     if (ageInput <= 18 && colorInput === "Red" && genderInput === "female"){
       $('.men').show()
       $("#justinBeiber").show();
-    } else if ((ageInput >= 19 && ageInput < 39) && colorInput === "blue" && genderInput === "female") {
+    } else if ((ageInput >= 19 && ageInput < 39) && colorInput === "Blue" && genderInput === "female") {
       $("#bradPitt").show();
-    } else if (ageInput >= 40 && colorInput === "green" && genderInput === "female") {
-      $("#george").show();
-    } else if (ageInput <= 18 && colorInput === "red" && genderInput === "male"){
-      $("#arianna").show();
-    } else if ((ageInput >= 19 && ageInput < 39) && colorInput === "blue" && genderInput === "male") {
-      $("#angelina").show();
-    } else if (ageInput >= 40 && colorInput === "green" && genderInput === "male") {
-      $("#susan").show();
+    } else if (ageInput >= 40 && colorInput === "Green" && genderInput === "female") {
+      $("#georgeClooney").show();
+    } else if (ageInput <= 18 && colorInput === "Red" && genderInput === "male"){
+      $("#arianaGrande").show();
+    } else if ((ageInput >= 19 && ageInput < 39) && colorInput === "Blue" && genderInput === "male") {
+      $("#angelinaJolie").show();
+    } else if (ageInput >= 40 && colorInput === "Green" && genderInput === "male") {
+      $("#susanSarandon").show();
     } else {
       alert("No date for you!")
     }
