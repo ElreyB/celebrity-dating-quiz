@@ -1,0 +1,11 @@
+#men{
+  display: none;
+}
+#women{
+  display: none;
+}
+
+img{
+  width: 300px;
+  height: 300px;
+}
