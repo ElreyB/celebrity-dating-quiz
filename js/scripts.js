@@ -6,7 +6,7 @@ $(document).ready(function(){
     var genderInput = $("input:radio[name=gender]:checked").val();
 
     if (ageInput <= 18 && colorInput === "Red" && genderInput === "female"){
-      $('.men').show()
+      $(".men").show();
       $("#justinBeiber").show();
     } else if ((ageInput >= 19 && ageInput < 39) && colorInput === "Blue" && genderInput === "female") {
       $("#bradPitt").show();
@@ -19,7 +19,7 @@ $(document).ready(function(){
     } else if (ageInput >= 40 && colorInput === "Green" && genderInput === "male") {
       $("#susanSarandon").show();
     } else {
-      alert("No date for you!")
+      $(".help-inline").show();
     }
 
     event.preventDefault();
