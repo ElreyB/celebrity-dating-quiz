@@ -4,6 +4,16 @@ $(document).ready(function(){
     var ageInput = parseInt($("#age").val());
     var colorInput = $("#color").val();
     var genderInput = $("input:radio[name=gender]:checked").val();
+    console.log(nameInput);
+    console.log(ageInput);
+
+    // adds error color to age field when left empty
+    // also best practice is to parseInt("#age") here instead
+    if (isNaN(ageInput)){
+      $(".age").addClass("has-error");
+      $(".help-inline").show();
+    }
+
 
     if (ageInput <= 18 && colorInput === "Red" && genderInput === "female"){
       $(".men").show();
@@ -18,9 +28,13 @@ $(document).ready(function(){
       $("#angelinaJolie").show();
     } else if (ageInput >= 40 && colorInput === "Green" && genderInput === "male") {
       $("#susanSarandon").show();
-    } else {
-      $(".help-inline").show();
     }
+    // else {
+    //   $(".help-inline").show();
+    //   if (ageInput === NaN){
+    //     $(".age").addClass("has-error");
+    //   }
+    // }
 
     event.preventDefault();
   });
